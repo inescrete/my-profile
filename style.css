@@ -1,0 +1,142 @@
+/* Style global */
+body {
+  background-color: #f7f7fb;      /* fond très léger */
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #33363f;
+  margin: 0;
+}
+
+/* Titres */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* Utilitaires */
+.text-center {
+  text-align: center;
+}
+
+/* Bandeau */
+#banner {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #2c3150;
+  padding: 36px 20px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#banner h1 {
+  font-size: 30px;
+}
+
+#banner p {
+  opacity: 0.8;
+}
+
+/* Conteneur */
+.container {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto 36px;
+  padding: 0 15px;
+}
+
+/* Cartes */
+.card {
+  background-color: #ffffff;
+  padding: 24px 26px;
+  margin: 16px 0;
+  border-radius: 12px;
+  border: 1px solid rgba(20, 23, 55, 0.06);
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.05);
+}
+
+.card h2 {
+  font-size: 19px;
+  margin-bottom: 8px;
+  color: #252949;
+}
+
+.card p {
+  margin: 0;
+}
+
+/* Avatar principal */
+.avatar-main {
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin: 0 auto 18px;
+  border: 3px solid #e3e6ff;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.18);
+}
+
+/* Liens */
+a {
+  color: #4b5bb0;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+/* Boutons réseaux */
+.btn-pill {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background-color: #6274d8;   /* bleu un peu désaturé */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(98, 116, 216, 0.4);
+}
+
+.btn-pill:hover {
+  background-color: #505fc2;
+  transform: translateY(-1px);
+}
+
+/* Liste inline */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  #banner h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .avatar-main {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 540px) {
+  #banner {
+    padding: 28px 16px;
+  }
+
+  #banner h1 {
+    font-size: 22px;
+  }
+}
